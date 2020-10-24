@@ -74,6 +74,61 @@ if (alphabet == first[0] || alphabet == first[1] || alphabet == first[2] || alph
 );
 
 /**
+ * Number Search
+Your task is to write a function that checks whether an element occurs in a list/array.
+
+Your function would take 2 parameters, array and num.
+
+Please follow the Test Case in commented code and make sure your code achieves the desired result.
+ */
+var newArray = [1,2,3,4,5]
+var newNumber = 4
+search(newArray, newNumber) // should return true
+
+function search(array, num) {
+    for (let d = 0; d < array.length; d++) {
+    // console.log(array[d]);
+      if (array[d] === num)
+        return 'True';
+    }
+  }
+
+/**
+ * Largest Number
+Your task is to write a function that returns the largest number in a list/array.
+Your function would take 1 parameter, array.
+
+array will contain a set of strings and numbers
+the lowest number will always be 0
+a string that is numeric should be considered a valid number, therefore need to be validated
+ */
+
+largestNumber([1,2,3,4,5]) // should return 5
+largestNumber([1,2,3,'hp','5']) // should return 5
+
+function largestNumber(arr) {
+    var largest; 
+    var a = Number(arr);
+    //console.log(typeof a);
+    //console.log(a);
+    var b = parseInt('5');
+    //console.log(b);
+    //console.log(typeof b);
+    
+    //LargestNumber
+    console.log(Math.max(...arr));
+    
+    for ( let i = 0; i < arr.length; i++) {
+    //console.log(arr);
+    //console.log(arr[i]);
+    if (arr[i] === '5') {
+    console.log('valid number');
+      } 
+    }
+    // code above this line
+    return largest
+  }
+/**
 --------------------
 String Manipulators!
 --------------------
